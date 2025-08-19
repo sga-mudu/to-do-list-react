@@ -11,5 +11,5 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base:"/to-do-list-react",
+  base: process.env.VITE_BASE_PATH ||"/to-do-list-react",
 })
